@@ -1,28 +1,30 @@
-<template>
+  <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <infinite-scroll></infinite-scroll>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import InfiniteScroll from './components/InfiniteScroll.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    InfiniteScroll
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  #app{
+    padding-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 </style>
