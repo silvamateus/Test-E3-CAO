@@ -50,7 +50,8 @@ body {
   padding-top: 1em;
   padding-left: 5em;
   width: 93%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4,1fr)
 }
 </style>

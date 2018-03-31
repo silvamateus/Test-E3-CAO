@@ -1,12 +1,20 @@
 <template>
-  <div class="movie-card">
+  <article class="movie-card">
     <img :src="post.img" :alt="post.title">
-    <div class="info-card">
+    <main class="info-card">
       <h2>{{post.title}}</h2>
-      <p>tag</p>
-      <p>{{post.info}}</p>
-    </div>
-  </div>
+      <p class="font-default">tag</p>
+      <p class="font-default">{{post.info}}</p>
+    </main>
+    <footer>
+        <span class='fa fa-star'></span>
+        <span class='fa fa-star'></span>
+        <span class='fa fa-star'></span>
+        <span class='fa fa-star'></span>
+        <span class='fa fa-star'></span>
+    </footer>
+</article>
+
 </template>
 
 <script>
