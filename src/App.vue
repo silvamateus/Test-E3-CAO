@@ -24,7 +24,7 @@ export default {
   methods: {
     getData: function() {
       this.isLoading = true
-      fetch('http://www.mocky.io/v2/5abed14c2e000064006f7e59')
+      fetch('http://www.mocky.io/v2/5abf98fc2c00005200c3ce3f')
         .then(res => res.json())
         .then(res => (this.posts = this.posts.concat(res.posts)))
         .finally(this.isLoading = false)
