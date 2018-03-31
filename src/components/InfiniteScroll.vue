@@ -28,15 +28,27 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
   .movie-card{
-    width: 20%;
-    height: 40%;
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    width: 100%;
+    box-shadow: 0px 2px 5px -2px rgba(50,40,100,0.75);
+    border-radius: .2rem;
+    overflow: hidden;
     img{
       width: 100%;
     }
     .info-card{
-      padding: 1em;
+      display: flex;
+      flex-flow: column;
+      padding: 2rem;
+      width: 90%;
+
+    }
+  }
+
+  .info-card{
+    .font-default{
+      font-size: 12px;
     }
   }
 </style>
