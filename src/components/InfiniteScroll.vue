@@ -61,11 +61,10 @@ export default {
     }
     }
     .info-card{
-      display: flex;
-      flex-flow: column;
-      padding: 2rem;
-      width: 90%;
-
+      //display: flex;
+      //flex-flow: column;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
     }
   }
 
