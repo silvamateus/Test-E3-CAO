@@ -39,6 +39,12 @@ export default {
     overflow: hidden;
     img{
       width: 100%;
+    }
+    footer{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
       .awesome-facebook{
         color: #fefefe
     }
