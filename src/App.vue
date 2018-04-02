@@ -29,10 +29,17 @@ export default {
         .then(res => res.json())
         .then(res => (this.posts = this.posts.concat(res.posts)))
         .finally(this.isLoading = false)
+    },
+    scrollControl: function(e) {
+      if ((window.innerHeight + Math.ceil(window.scrollY) + 1) >= e.target.body.offsetHeight) {
+        this.getData()
+        this.isLoading = true
+      }
     }
   },
   mounted() {
     this.getData()
+    window.addEventListener('scroll', this.scrollControl)
   }
 }
 </script>

@@ -58,7 +58,7 @@ export default {
       padding-top: 1rem;
       .awesome-facebook{
         color: #fefefe
-    }
+      }
     }
     .info-card{
       //display: flex;
