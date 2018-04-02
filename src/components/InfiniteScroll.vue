@@ -32,6 +32,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
+  .info-card, footer{
+    border: solid #d3d2d6d0;
+    border-width: 0 1px 1px;
+    padding: 0 2rem;
+    width: 100%;
+  }
+
   .movie-card{
     width: 100%;
     display: flex;
