@@ -7,11 +7,14 @@
       <p class="font-default">{{post.info}}</p>
     </main>
     <footer>
-        <span class='fa fa-star'></span>
-        <span class='fa fa-star'></span>
-        <span class='fa fa-star'></span>
-        <span class='fa fa-star'></span>
-        <span class='fa fa-star'></span>
+      <div class="rating-stars">
+        <i class='fa fa-star'></i>
+        <i class='fa fa-star'></i>
+        <i class='fa fa-star'></i>
+        <i class='fa fa-star'></i>
+        <i class='fa fa-star'></i>
+      </div>
+      <span class="facebook-rounded"> <i class="fa fa-facebook awesome-facebook"></i> </span>
     </footer>
 </article>
 
@@ -36,6 +39,9 @@ export default {
     overflow: hidden;
     img{
       width: 100%;
+      .awesome-facebook{
+        color: #fefefe
+    }
     }
     .info-card{
       display: flex;
@@ -50,5 +56,14 @@ export default {
     .font-default{
       font-size: 12px;
     }
+  }
+  .awesome-facebook{
+    text-align: center;
+    width: 1.1rem;
+    background-color: rgb(199, 199, 199);
+    border-radius: 100%;
+    padding-top: .3rem;
+    padding-right: .4rem;
+    padding-left: .2rem
   }
 </style>
