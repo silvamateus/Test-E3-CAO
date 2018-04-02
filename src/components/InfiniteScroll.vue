@@ -1,10 +1,10 @@
 <template>
-  <article class="movie-card">
+  <article class="movie-card font-default">
     <img :src="post.img" :alt="post.title">
     <main class="info-card">
       <h2>{{post.title}}</h2>
-      <p class="font-default">tag</p>
-      <p class="font-default">{{post.info}}</p>
+      <p>tag</p>
+      <p>{{post.info}}</p>
     </main>
     <footer>
       <div class="rating-stars">
