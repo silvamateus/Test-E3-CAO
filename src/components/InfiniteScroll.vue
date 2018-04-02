@@ -34,11 +34,15 @@ export default {
 
   .movie-card{
     width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
     box-shadow: 0px 2px 5px -2px rgba(50,40,100,0.75);
     border-radius: .2rem;
     overflow: hidden;
     img{
       width: 100%;
+      display: block;
     }
     footer{
       display: flex;
