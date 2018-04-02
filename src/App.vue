@@ -8,6 +8,7 @@
 <script>
 import InfiniteScroll from './components/InfiniteScroll.vue'
 import Loading from './components/Loading.vue'
+import reqLink from './apiLink'
 
 export default {
   data() {
@@ -24,7 +25,7 @@ export default {
   methods: {
     getData: function() {
       this.isLoading = true
-      fetch('http://www.mocky.io/v2/5abf98fc2c00005200c3ce3f')
+      fetch(reqLink)
         .then(res => res.json())
         .then(res => (this.posts = this.posts.concat(res.posts)))
         .finally(this.isLoading = false)
@@ -53,5 +54,5 @@ body {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(4,1fr)
-}
+  }
 </style>
