@@ -48,11 +48,12 @@ body {
 }
 
 #app {
-  padding-top: 1em;
+  padding-right: 5em;
   padding-left: 5em;
-  width: 93%;
   display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(4,1fr)
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, auto);
+  align-items: start;
+  column-count:4;
   }
 </style>
