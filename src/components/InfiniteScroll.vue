@@ -60,10 +60,10 @@ export default {
       }
     }
     .info-card{
-      //display: flex;
-      //flex-flow: column;
-      text-overflow: ellipsis;
-      word-wrap: break-word;
+      display: flex;
+      flex-flow: column;
+      //text-overflow: ellipsis;
+      //word-wrap: break-word;
     }
   }
 
