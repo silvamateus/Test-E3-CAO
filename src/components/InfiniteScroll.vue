@@ -3,7 +3,7 @@
     <img :src="post.img" :alt="post.title">
     <main class="info-card">
       <h2>{{post.title}}</h2>
-      <p>tag</p>
+      <p>{{post.tag}}</p>
       <p>{{post.info}}</p>
     </main>
     <footer>
