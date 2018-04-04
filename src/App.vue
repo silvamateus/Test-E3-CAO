@@ -7,6 +7,7 @@
 
 <script>
 import InfiniteScroll from './components/InfiniteScroll.vue'
+import TopBar from './components/TopBar.vue'
 import Loading from './components/Loading.vue'
 import reqLink from './apiLink'
 
@@ -19,6 +20,7 @@ export default {
   },
   name: 'app',
   components: {
+    TopBar,
     InfiniteScroll,
     Loading
   },
