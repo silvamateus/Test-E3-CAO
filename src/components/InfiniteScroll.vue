@@ -1,6 +1,6 @@
 <template>
   <article class="movie-card font-default">
-    <img :src="post.img" :alt="post.title">
+    <img class="movie-img" :src="post.img" :alt="post.title">
     <main class="info-card">
       <h2>{{post.title}}</h2>
       <p>{{post.tag}}</p>
