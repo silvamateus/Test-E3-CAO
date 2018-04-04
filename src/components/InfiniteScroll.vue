@@ -74,11 +74,12 @@ export default {
   }
   .awesome-facebook{
     text-align: center;
-    width: 1.1rem;
+    width: 1.4rem;
+    height: 1.4rem;
     background-color: rgb(199, 199, 199);
     border-radius: 100%;
-    padding-top: .3rem;
-    padding-right: .4rem;
-    padding-left: .2rem
+    padding-right: .1rem;
+    padding-top: .2rem
+  }
   }
 </style>
