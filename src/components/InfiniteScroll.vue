@@ -8,13 +8,13 @@
     </main>
     <footer>
       <div class="rating-stars">
-        <i class='fa fa-star'></i>
-        <i class='fa fa-star'></i>
-        <i class='fa fa-star'></i>
-        <i class='fa fa-star'></i>
-        <i class='fa fa-star'></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
       </div>
-      <span class="facebook-rounded"> <i class="fa fa-facebook awesome-facebook"></i> </span>
+      <span class="facebook-rounded"> <i class="fab fa-facebook-f awesome-facebook"></i> </span>
     </footer>
 </article>
 
