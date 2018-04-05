@@ -20,7 +20,8 @@ export default {
   data() {
     return {
       isLoading: false,
-      posts: []
+      posts: [],
+      search: ''
     }
   },
   name: 'app',
@@ -34,14 +35,23 @@ export default {
       this.isLoading = true
       fetch(reqLink)
         .then(res => res.json())
-        .then(res => (this.posts = this.posts.concat(res.posts)))
+        .then(res => {
+          (this.search === ''
+            ? this.posts = this.posts.concat(res.posts)
+            : this.posts = this.posts.concat(res.posts).filter(query => query.title.match(this.quer)))
+        }
+        )
         .finally(this.isLoading = false)
     },
     scrollControl: function(e) {
-      if ((window.innerHeight + Math.ceil(window.scrollY) + 1) >= e.target.body.offsetHeight) {
+      if ((window.innerHeight + Math.ceil(window.scrollY)) >= e.target.body.offsetHeight) {
         this.getData()
         this.isLoading = true
       }
+    },
+    searchThis(text) {
+      this.search = text
+      this.getData()
     }
   },
   mounted() {
