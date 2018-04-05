@@ -68,16 +68,18 @@ export default {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 4rem;
 }
 
 #app {
-  padding-right: 5em;
-  padding-left: 5em;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(4, auto);
-  align-items: start;
-  column-count:4;
+  padding: 1rem;
+}
+
+main{
+  display: flex;
+  //flex-direction: column;
+  flex-wrap:  wrap;
+  justify-content: space-around;
   }
+
 </style>
