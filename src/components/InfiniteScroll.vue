@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss">
 
-  .info-card, footer{
+  .info-card, .movie-card > footer{
     border: solid #d3d2d6d0;
     border-width: 0 1px 1px;
     padding: 0 2rem;
@@ -39,14 +39,16 @@ export default {
   }
 
   .movie-card{
-    width: 100%;
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    //padding-bottom: 1rem;
+    background-color: #fefefe;
     box-shadow: 0px 2px 5px -2px rgba(50,40,100,0.75);
     border-radius: .2rem;
+    width: calc(25% - 1rem);
+    //flex-basis: calc(25% - 1rem) ;
     overflow: hidden;
-    img{
+    .movie-img{
       width: 100%;
       display: block;
     }
@@ -62,8 +64,6 @@ export default {
     .info-card{
       display: flex;
       flex-flow: column;
-      //text-overflow: ellipsis;
-      //word-wrap: break-word;
     }
   }
 
