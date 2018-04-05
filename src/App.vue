@@ -1,7 +1,12 @@
 <template>
   <div id="app">
+    <top-bar @searchQuery="searchThis"></top-bar>
+    <main>
     <infinite-scroll v-for="(post, ind) in posts" :key="ind" :post="post"></infinite-scroll>
+    </main>
+    <footer>
     <loading v-if="isLoading"></loading>
+    </footer>
   </div>
 </template>
 
